@@ -35,8 +35,9 @@ public class MotelRoomController {
     }
 
     @GetMapping("/search-location")
-    public Response<List<MotelRoomDto>> searchByLocation(Integer proId, Integer dtId, Integer subId, Integer typeRoom) {
-        return Response.buildResponse(motelRoomService.searchByLocation(proId, dtId, subId, typeRoom));
+    public Response<List<MotelRoomDto>> searchByLocation(Integer proId, Integer dtId, Integer subId,
+                                                         Integer typeRoom, Boolean isAscPrice) {
+        return Response.buildResponse(motelRoomService.searchByLocation(proId, dtId, subId, typeRoom, isAscPrice));
     }
 
     @DeleteMapping("/{id}")
