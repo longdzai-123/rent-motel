@@ -18,6 +18,6 @@ public interface MotelRoomService {
 
     List<MotelRoomDto> searchByName(String name);
 
-    List<MotelRoomDto> searchByLocation(Integer proId, Integer dtId, Integer subId);
+    List<MotelRoomDto> searchByLocation(Integer proId, Integer dtId, Integer subId, Integer typeRoom);
 
 }
